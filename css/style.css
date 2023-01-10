@@ -1,0 +1,96 @@
+/* Обнулення */
+*,
+*::before,
+*::after {
+  padding: 0;
+  margin: 0;
+  border: 0;
+  box-sizing: border-box;
+}
+/* Стилі для демонстрації */
+html,
+body {
+  height: 100%;
+}
+.wrapper {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  border: 20px solid black;
+}
+.block {
+  padding: 50px;
+  max-width: 1170px;
+  margin: 0px auto;
+}
+.block__item {
+  margin: 0px 0px 30px 0px;
+}
+
+/* Основні стилі */
+
+.square {
+  width: 150px;
+  height: 150px;
+  background-color: green;
+}
+.rectangle {
+  width: 300px;
+  height: 150px;
+  background-color: green;
+}
+.circle {
+  width: 150px;
+  height: 150px;
+  background-color: green;
+  border-radius: 50%;
+}
+.oval {
+  width: 300px;
+  height: 150px;
+  background-color: green;
+  border-radius: 50%;
+}
+.triangle-up {
+  width: 0;
+  height: 0;
+  border-bottom: 50px solid green;
+  border-left: 50px solid transparent;
+  border-right: 50px solid transparent;
+ 
+}
+.triangle-down {
+  width: 0;
+  height: 0;
+  border-left: 50px solid transparent;
+  border-right: 50px solid transparent;
+  border-top: 100px solid green;
+}
+.triangle-left {
+  width: 0;
+  height: 0;
+  border-top: 50px solid transparent;
+  border-bottom: 50px solid transparent;
+  border-right: 100px solid green;
+  }
+.triangle-right {
+  width: 0;
+  height: 0;
+  border-top: 50px solid transparent;
+  border-bottom: 50px solid transparent;
+  border-left: 100px solid green;
+}
+.triangle-right:hover{
+  border-left-color: crimson;
+}
+.parallelogram {
+  width: 200px;
+  height: 100px;
+  background-color: green;
+  transform: skew(20deg);
+}
+.trapezoid {
+  width: 200px;
+  border-bottom: 100px solid green;
+  border-left: 30px solid transparent;
+  border-right: 30px solid transparent;
+}
